@@ -22,12 +22,6 @@ public class IfElseLesson : MonoBehaviour
 
         /* STUDENT MODIFICATION AREA 1: 
         Add an else-if statement here to move backward when S is pressed
-        Uncomment this section to practice
-        
-        else if (Input.GetKeyDown(KeyCode.S))
-        {
-            transform.Translate(Vector3.back * speed * Time.deltaTime);
-        }
         */
 
         // If/Else Color Change Example
@@ -44,7 +38,7 @@ public class IfElseLesson : MonoBehaviour
         else
         {
             // This runs if neither key is pressed
-            //Debug.Log("Press Space or R to see colors!");
+            Debug.Log("Press Space or R to see colors!");
         }
 
         /* STUDENT MODIFICATION AREA 2:
