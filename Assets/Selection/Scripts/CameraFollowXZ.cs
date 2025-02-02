@@ -6,11 +6,18 @@ public class CameraFollowXZ : MonoBehaviour
     public Vector3 offset = new Vector3(0, 10, -10); // Camera offset from the target
     public float smoothSpeed = 0.125f; // Smoothing speed for camera movement
 
-    void LateUpdate()
+    void Start()
     {
         if (target == null)
         {
             Debug.LogWarning("CameraFollowXZ: No target assigned!");
+        }
+    }
+
+    void LateUpdate()
+    {
+        if (target == null)
+        {
             return;
         }
 
